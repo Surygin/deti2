@@ -1,0 +1,108 @@
+@media screen and (min-width: 1195px)
+  .header
+    &-menu 
+      ul
+        padding-left: 50px
+@media screen and (max-width: 991px)
+  .header
+    &-menu 
+      position: fixed
+      top: 0
+      left: -100vw
+      width: 100vw
+      height: 100vh
+      background-color: $osn
+      z-index: 5
+      ul 
+        margin: 0
+        padding: 0
+        padding-top: 50px
+        width: 100%
+        li 
+          display: block
+          margin: 0
+          margin-bottom: 20px
+          width: 100%
+          border-bottom: 1px solid #fff
+          a 
+            padding: 10px
+            font-size: 24px
+            color: #fff
+  .menu
+    &-button 
+      position: fixed
+      padding: 5px
+      top: 20px
+      right: 10px
+      height: 50px
+      border-radius: 10px 0 10px 0
+      background-color: #fff
+      box-shadow: 8px 5px 25px 2px rgba(11, 90, 19, 0.35)
+      z-index: 10
+      span 
+        display: block
+        margin-top: 20px
+        width: 30px
+        height: 2px
+        background-color: #232323
+        z-index: 10
+      span::before, span::after
+        content: ''
+        display: block
+        width: 30px
+        height: 2px
+        background-color: #232323
+        transition: 0.5s
+        z-index: 10
+  .menu
+    &-button
+      span::before
+        transform: translateY(-7px)
+  .menu
+    &-button
+      span::after
+        transform: translateY(5px)
+  .menu
+    &-button__active
+      span
+        height: 0
+  .menu
+    &-button__active
+      span::before
+        transform: rotate(-45deg)
+  .menu
+    &-button__active
+      span::after
+        margin-top: -2px
+        transform: rotate(45deg)
+  .w-100 
+    left: 0
+  .hero 
+    &-title 
+      padding-top: 30px
+  .help
+    &-title
+      font-size: 24px
+  .help2-form 
+    padding: 30px
+    &__pay 
+      width: 200px
+      margin: 0 auto
+  .news
+    &-box 
+      margin-bottom: 50px
+  .mission 
+    &-img 
+      margin-bottom: 30px
+  .help
+    &-first 
+      &__name:last-child
+        width: 200px
+        margin: 0 auto
+
+@media screen and (max-width: 767px)
+  .hero
+    &-title 
+      h1 
+        font-size: 30px
+        line-height: 40px
